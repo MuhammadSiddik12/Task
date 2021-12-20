@@ -1,3 +1,5 @@
+const nodemailer = require('nodemailer')
+
 const transpoter = nodemailer.createTransport({
     service: process.env.SERVICE,
     auth: {

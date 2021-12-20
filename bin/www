@@ -5,7 +5,6 @@
  */
 require('dotenv').config();
 var app = require('../app');
-var debug = require('debug')('expressexample:server');
 var http = require('http');
 const db = require('../Utils/database');
 /**
