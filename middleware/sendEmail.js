@@ -1,7 +1,20 @@
+const transpoter = nodemailer.createTransport({
+    service: process.env.SERVICE,
+    auth: {
+        user: process.env.USER_EMAIL,
+        pass: process.env.USER_PASSWORD
+    }
+})
+
 exports.sendEmail = (source) => {
-    return new Promise(function (resolve, reject) {
-        setTimeout(function () {
-            resolve(source)
-        }, 2000)
+    const options = {
+        from: process.env.FROM,
+        to: process.env.TO,
+        subject: "CSV Queue Mail",
+        text: source
+    }
+    transpoter.sendMail(options, (err, info) => {
+        if (err) throw err;
+        console.log(info.response)
     })
 }

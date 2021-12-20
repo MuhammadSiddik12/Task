@@ -24,6 +24,7 @@ exports.addNewsletters = async (req, res, next) => {
         }).catch(err => {
             return res.status(500).json({ status: 1, message: 'could not add file to the queue' })
         })
-
-    } else return res.status(400).json({ status: 0, message: 'files could not be uploaded due to extension errors' })
+    } else {
+        return res.status(400).json({ status: 0, message: 'files could not be uploaded due to extension errors' })
+    }
 }

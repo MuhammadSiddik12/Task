@@ -11,10 +11,8 @@ const parkingLotQueue=new Bull('parking lot queue',{
 
 
 const fileQueue = new Bull('file queue',{
-    redis:`127.0.0.1:6379'`
+    redis:`127.0.0.1:6379`
 })
-
-
 
 
 emailQueue.on('completed',(job,result)=>{
