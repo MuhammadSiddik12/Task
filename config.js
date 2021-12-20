@@ -2,16 +2,15 @@ const Bull = require('bull');
 
 
 const emailQueue = new Bull('email', {
-    redis: `127.0.0.1:6379`
+    redis: { port: 6379, host: '127.0.0.1', password: 'Siddik12' }
 });
 
 const parkingLotQueue = new Bull('parking lot queue', {
-    redis: `127.0.0.1:6379`
+    redis: { port: 6379, host: '127.0.0.1', password: 'Siddik12' }
 })
 
-
 const fileQueue = new Bull('file queue', {
-    redis: `127.0.0.1:6379`
+    redis: { port: 6379, host: '127.0.0.1', password: 'Siddik12' }
 })
 
 
