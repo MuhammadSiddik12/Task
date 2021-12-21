@@ -6,8 +6,6 @@ const { fun } = require('../Utils/csvParser');
 //this is where we are going to parse the files.
 module.exports = async function (job, done) {
     try {
-        // console.log(fun(job.data.filename))
-        // console.log(job.data.filename, "dk");
         let clients = await fun(job.data.filename)
         if (clients) {
             let a = clients.map(function (jobs) {

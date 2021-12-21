@@ -1,28 +1,3 @@
-// const mongoose = require('mongoose');
-// const schema = mongoose.Schema;
-
-// const userSchema = new schema({
-//     firstName: {
-//         type: String,
-//         require: true
-//     },
-//     lastName: {
-//         type: String,
-//         require: false
-//     },
-//     age: {
-//         type: Number,
-//         require: true
-//     },
-//     email: {
-//         type: String,
-//         require: true,
-//         unique: true
-//     }
-// })
-
-// module.exports = mongoose.model('users', userSchema, 'users');
-
 const { Sequelize } = require("sequelize");
 const sequelize = require("../Utils/database");
 const User = sequelize.define("users", {

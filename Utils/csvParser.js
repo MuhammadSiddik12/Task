@@ -17,5 +17,3 @@ exports.fun = function jobFun(fileName) {
     })
   })
 }
-
-// module.exports = jobFun;

@@ -1,14 +1,3 @@
-// const mongoose = require("mongoose");
-// const Schema = mongoose.Schema;
-
-
-// const job = new Schema({
-//     name: {
-//         type: "string"
-//     }
-
-// })
-
 const { Sequelize}  = require("sequelize");
 const sequelize = require("../Utils/database");
 const Job = sequelize.define("job", {
