@@ -53,8 +53,8 @@ Example Response - > 200
         "encoding": "7bit",
         "mimetype": "text/csv",
         "destination": "./uploads",
-        "filename": "addresses-1636283548463",
-        "path": "uploads/addresses-1636283548463",
+        "filename": "example-1636283548463",
+        "path": "uploads/example-1636283548463",
         "size": 328
       },
       "opts": {
