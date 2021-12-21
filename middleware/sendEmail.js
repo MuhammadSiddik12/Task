@@ -20,7 +20,7 @@ exports.sendEmail = (source) => {
         html: "<b>Hello world</b>"
     }
     transpoter.sendMail(options, (err, info) => {
-        if (err) throw err.message;
-        console.log(info.response)
+        // if (err) throw err.message;
+        // console.log(info.response)
     })
 }
